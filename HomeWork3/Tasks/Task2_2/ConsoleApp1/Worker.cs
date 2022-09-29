@@ -8,9 +8,9 @@ namespace ConsoleApp1
 {
     public abstract class Worker
     {
-        public string Name { get; set; }
+        public string Name { get; }
         public string Position { get; set; }
-        public StringBuilder WorkDay { get; set; }
+        public StringBuilder WorkDay { get; }
         protected Worker(string name)
         {
             Name = name;
