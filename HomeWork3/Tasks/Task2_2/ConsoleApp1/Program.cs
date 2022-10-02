@@ -11,7 +11,7 @@
                 Console.WriteLine("Choose a command:");
                 Console.WriteLine("1 - add a team");
                 Console.WriteLine("2 - show all teams");
-                Console.WriteLine("3 - Fiish");
+                Console.WriteLine("3 - Finish");
                 string? command = Console.ReadLine();
                 int commandNumber;
                 if (int.TryParse(command, out commandNumber))

@@ -15,18 +15,24 @@ namespace ConsoleApp1
         {
             Name = name;
             WorkDay = new StringBuilder();
+            Position = "Worker";
+        }
+
+        private void SetWorkActivity(string activity)
+        {
+            WorkDay.Append(activity);
         }
         public void Call()
         {
-            WorkDay.Append("Make call; ");
+            SetWorkActivity("Make call; ");
         }
         public void WriteCode()
         {
-            WorkDay.Append("Write code; ");
+            SetWorkActivity("Write code; ");
         }
         public void Relax()
         {
-            WorkDay.Append("Relax; ");
+            SetWorkActivity("Relax; ");
         }
         public abstract void FillWorkDay();
 
