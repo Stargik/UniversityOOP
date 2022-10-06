@@ -7,14 +7,14 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Converter converter;
-            decimal usdCurrency, eurCurrency;
+            decimal eurCurrency;
             while (true)
             {
                 Console.WriteLine("Enter usd currency: ");
                 string? usd = Console.ReadLine();
                 Console.WriteLine("Enter eur currency: ");
                 string? eur = Console.ReadLine();
-                if (Decimal.TryParse(usd, out usdCurrency) && Decimal.TryParse(eur, out eurCurrency))
+                if (Decimal.TryParse(usd, out decimal usdCurrency) && Decimal.TryParse(eur, out eurCurrency))
                 {
                     if (usdCurrency != 0 && eurCurrency != 0)
                     {

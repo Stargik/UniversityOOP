@@ -8,31 +8,32 @@ namespace ConsoleApp1
 {
     public abstract class Worker
     {
-        public string Name { get; private set; }
+        public string Name { get; }
         public string Position { get; set; }
-        public StringBuilder WorkDay { get; private set; }
+        private readonly StringBuilder workDay;
+        public string WorkDay => workDay.ToString();
         protected Worker(string name)
         {
             Name = name;
-            WorkDay = new StringBuilder();
+            workDay = new StringBuilder();
             Position = "Worker";
         }
 
         private void SetWorkActivity(string activity)
         {
-            WorkDay.Append(activity);
+            workDay.Append(activity + "; ");
         }
         public void Call()
         {
-            SetWorkActivity("Make call; ");
+            SetWorkActivity("Make call");
         }
         public void WriteCode()
         {
-            SetWorkActivity("Write code; ");
+            SetWorkActivity("Write code");
         }
         public void Relax()
         {
-            SetWorkActivity("Relax; ");
+            SetWorkActivity("Relax");
         }
         public abstract void FillWorkDay();
 
