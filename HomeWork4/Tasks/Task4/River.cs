@@ -8,8 +8,8 @@ namespace Task4
 {
     internal class River : GeographyObject
     {
-        private double speed;
-        private double length;
+        private readonly double speed;
+        private readonly double length;
         public River(double x, double y, string name, string description, double speed, double length) : base(x, y, name, description)
         {
             this.speed = speed > 0 ? speed : 0;

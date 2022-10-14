@@ -10,7 +10,7 @@ namespace Task5
     {
         public int PagesCount { get; }
         public string Publisher { get; }
-        public List<string> Authors { get; }
+        public IReadOnlyCollection<string> Authors { get; }
         public Book(string name, string description, decimal price, string country, DateTime packageDate, int pagesCount, string publisher, List<string> authors)
             : base(name, description, price, country, packageDate)
         {
