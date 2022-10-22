@@ -8,7 +8,7 @@ namespace JSon
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             string pathRead = @".\books.json";
-            string pathWrite = @".\booksWrite.json";
+
             using (FileStream readStream = new FileStream(pathRead, FileMode.Open))
             {
                 var books = JsonSerializer.Deserialize<List<Book>>(readStream);
