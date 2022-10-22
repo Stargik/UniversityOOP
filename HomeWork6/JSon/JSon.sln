@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSon", "JSon\JSon.csproj", "{7C0B934C-7DB9-4966-85A4-90B0B7C4FA77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C0B934C-7DB9-4966-85A4-90B0B7C4FA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0B934C-7DB9-4966-85A4-90B0B7C4FA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0B934C-7DB9-4966-85A4-90B0B7C4FA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0B934C-7DB9-4966-85A4-90B0B7C4FA77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F9E7E09-9F4C-4790-B30D-CB6436521F7F}
+	EndGlobalSection
+EndGlobal
