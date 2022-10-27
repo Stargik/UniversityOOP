@@ -1,18 +1,19 @@
 ﻿using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace JSon
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             string pathRead = @".\books.json";
 
             using (FileStream readStream = new FileStream(pathRead, FileMode.Open))
             {
-                var books = JsonSerializer.Deserialize<List<Book>>(readStream);
-                if (books != null)
+                var books = await JsonSerializer.DeserializeAsync<List<Book>>(readStream);
+                if (books is not null)
                 {
                     foreach (var book in books)
                     {
